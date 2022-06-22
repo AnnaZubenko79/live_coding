@@ -1,0 +1,41 @@
+.navigation {
+  background-color: #ff7f50;
+  min-height: 200px;
+  display: flex;
+  flex: 1;
+}
+.products-list {
+  background-color: #006400;
+  min-height: 200px;
+  display: flex;
+  flex: 1;
+}
+.news {
+  background-color: #0ff;
+  min-height: 200px;
+  display: flex;
+}
+span {
+  padding: 8px;
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #faebd7;
+  border-radius: 4px;
+  margin: auto;
+  text-transform: lowercase;
+}
+@media screen and (min-width: 600px) {
+  .products {
+    display: flex;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+  }
+  .products {
+    flex: 2;
+  }
+  .news {
+    flex: 1;
+  }
+}
