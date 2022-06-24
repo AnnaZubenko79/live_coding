@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.navigation {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  min-height: 55px;
+}
+@media screen and (min-width: 480px) {
+  .navigation {
+    flex-direction: row;
+  }
+}
+.navigation__title {
+  text-align: center;
+  width: 100vw;
+  font-size: 30px;
+  color: #030303;
+}
+@media screen and (min-width: 480px) {
+  .navigation__title {
+    width: 50vw;
+    text-align: left;
+  }
+}
+.navigation__container {
+  display: flex;
+  width: 100vw;
+  justify-content: end;
+  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .navigation__container {
+    width: 50vw;
+  }
+}
+.navigation__filter {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  flex: 0 1 50%;
+}
+@media screen and (min-width: 480px) {
+  .navigation__filter {
+    flex: 0 1 25%;
+  }
+}
+.navigation__label {
+  margin-bottom: 15px;
+  color: grey;
+}
+.navigation__select {
+  border: 1px solid grey;
+  padding: 5px;
+}
+.navigation__sort {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+}
+@media screen and (min-width: 480px) {
+  .navigation__sort {
+    flex: 0 1 25%;
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  flex: 0 1 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2px;
+  background-color: #fff;
+  padding: 25px;
+}
+.product-card__img-wrapper {
+  max-width: 265px;
+  min-height: 230px;
+  margin-bottom: auto;
+  position: relative;
+}
+.product-card__sale {
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  padding: 4px 10px;
+  background-color: blue;
+  text-transform: uppercase;
+  color: #fff;
+}
+.product-card__img {
+  max-width: 100%;
+}
+.product-card__name {
+  font-size: 16px;
+  color: #030303;
+}
+.product-card__price {
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+/*# sourceMappingURL=style.css.map */
