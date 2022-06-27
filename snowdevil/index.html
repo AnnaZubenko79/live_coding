@@ -1,162 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEM</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav class="navigation">
-            <h2 class="navigation__title">JACKETS</h2>
-            <div class="navigation__container">
-                <div class="navigation__filter">
-                    <label class="navigation__label">FILTER BY</label>
-                    <select class="navigation__select">
-                        <option value="">All</option>
-                        <option value="">2016</option>
-                        <option value="">Jackets</option>
-                        <option value="">Jackets</option>
-                    </select>
-                </div>
-                <div class="navigation__sort">
-                    <label class="navigation__label">ORDER BY</label>
-                    <select class="navigation__select">
-                        <option value="">All</option>
-                        <option value="">2016</option>
-                        <option value="">Jackets</option>
-                        <option value="">Jackets</option>
-                    </select>
-                </div>
-            </div>
-        </nav>
-        <section class="products">
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <span class="product-card__sale">sale</span>
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <span class="product-card__sale">sale</span>
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <span class="product-card__sale">sale</span>
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <span class="product-card__sale">sale</span>
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <span class="product-card__sale">sale</span>
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <span class="product-card__sale">sale</span>
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__img-wrapper">
-                    <img class="product-card__img"
-                        src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
-                        alt="">
-                </div>
-                <div class="product-card__info">
-                    <h5 class="product-card__name">Haze Varsity</h5>
-                    <h6 class="product-card__price">$132.96</h6>
-                </div>
-            </div>
-        </section>
+      <nav class="navigation">
+        <h2 class="navigation__title">JACKETS</h2>
+        <div class="navigation__container">
+          <div class="navigation__filter">
+            <label class="navigation__label">FILTER BY</label>
+            <select class="navigation__select">
+              <option value="">All</option>
+              <option value="">2016</option>
+              <option value="">Jackets</option>
+              <option value="">Jackets</option>
+            </select>
+          </div>
+          <div class="navigation__sort">
+            <label class="navigation__label">ORDER BY</label>
+            <select class="navigation__select">
+              <option value="">All</option>
+              <option value="">2016</option>
+              <option value="">Jackets</option>
+              <option value="">Jackets</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <section class="products">
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <span class="product-card__sale">sale</span>
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <span class="product-card__sale">sale</span>
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <span class="product-card__sale">sale</span>
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <span class="product-card__sale">sale</span>
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <span class="product-card__sale">sale</span>
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <span class="product-card__sale">sale</span>
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img-wrapper">
+            <img
+              class="product-card__img"
+              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="product-card__info">
+            <h5 class="product-card__name">Haze Varsity</h5>
+            <h6 class="product-card__price">$132.96</h6>
+          </div>
+        </div>
+      </section>
     </div>
-
-</body>
-
+  </body>
 </html>
